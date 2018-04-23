@@ -525,7 +525,13 @@
     <UniqueID>REQ-027799d1-4216-4e2b-80e9-9fc464233747</UniqueID>
     <UserID>REQ-24</UserID>
     <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
-    <Name>New Requirement</Name>
+    <Name>Música</Name>
+    <Description> O jogo deve tocar uma música durante todo o jogo.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20  O jogo deve tocar uma m\'fasica durante todo o jogo.\par
+}
+</RichDescription>
     <Sequence>23</Sequence>
     <Type>Functional</Type>
     <Priority>1</Priority>
@@ -534,14 +540,20 @@
     <AssignedTo />
     <Release />
     <DateAdded>2018-04-23T08:56:24.727581-03:00</DateAdded>
-    <DateModified>2018-04-23T09:04:46.1731925-03:00</DateModified>
+    <DateModified>2018-04-23T11:13:49.0238034-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-2bed47a8-5dcc-4934-825a-9e1f2bb05c7a</UniqueID>
     <UserID>REQ-25</UserID>
     <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
-    <Name>New Requirement</Name>
+    <Name>Efeito Sonoro</Name>
+    <Description>O jogo deve emitir um som sempre que um botão for apertado.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O jogo deve emitir um som sempre que um bot\'e3o for apertado.\par
+}
+</RichDescription>
     <Sequence>24</Sequence>
     <Type>Functional</Type>
     <Priority>1</Priority>
@@ -550,7 +562,7 @@
     <AssignedTo />
     <Release />
     <DateAdded>2018-04-23T08:56:25.3681615-03:00</DateAdded>
-    <DateModified>2018-04-23T09:04:50.961788-03:00</DateModified>
+    <DateModified>2018-04-23T11:14:35.0795576-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
