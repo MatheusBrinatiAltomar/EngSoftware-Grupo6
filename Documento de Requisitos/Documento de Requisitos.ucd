@@ -1,8 +1,8 @@
 <?xml version="1.0" standalone="yes"?>
 <UCTDataSet xmlns="http://serliosoft.com/UCTData.xsd">
   <VersionInfo>
-    <Version>5.0</Version>
-    <SavedWith>12.0.6648</SavedWith>
+    <Version>5.1</Version>
+    <SavedWith>13.0.6683</SavedWith>
     <CreatedWith>12.0.6648</CreatedWith>
   </VersionInfo>
   <Project>
@@ -569,120 +569,220 @@
     <UniqueID>REQ-35ba0e17-8a14-4223-b476-5cfe2a523e7e</UniqueID>
     <UserID>REQ-26</UserID>
     <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
-    <Name>New Requirement</Name>
+    <Name>Engine</Name>
+    <Description> O jogo será desenvolvido na engine Unity 3D.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20  O jogo ser\'e1 desenvolvido na engine Unity 3D.\par
+}
+</RichDescription>
     <Sequence>25</Sequence>
     <Type>Non-functional</Type>
     <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
     <DateAdded>2018-04-23T08:56:26.0401001-03:00</DateAdded>
-    <DateModified>2018-04-23T08:56:26.0401001-03:00</DateModified>
+    <DateModified>2018-04-23T17:13:17.8322023-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-3541c838-78e1-4ec3-8691-822a81ca9b4a</UniqueID>
     <UserID>REQ-27</UserID>
     <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
-    <Name>New Requirement</Name>
+    <Name>Sistema Operacional </Name>
+    <Description>O jogo será desenvolvido para o sistema operacional Windows.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O jogo ser\'e1 desenvolvido para o sistema operacional Windows.\par
+}
+</RichDescription>
     <Sequence>26</Sequence>
     <Type>Non-functional</Type>
     <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
     <DateAdded>2018-04-23T08:56:26.680752-03:00</DateAdded>
-    <DateModified>2018-04-23T08:56:26.680752-03:00</DateModified>
+    <DateModified>2018-04-23T17:14:34.7329428-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-1362fb3d-8427-4159-9be5-a3f572afab73</UniqueID>
     <UserID>REQ-28</UserID>
     <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
-    <Name>New Requirement</Name>
+    <Name>Periférico de entrada </Name>
+    <Description>O jogo utilizará apenas o mouse para ser jogado.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O jogo utilizar\'e1 apenas o mouse para ser jogado.\par
+}
+</RichDescription>
     <Sequence>27</Sequence>
     <Type>Non-functional</Type>
     <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
     <DateAdded>2018-04-23T08:56:27.336991-03:00</DateAdded>
-    <DateModified>2018-04-23T08:56:27.336991-03:00</DateModified>
+    <DateModified>2018-04-23T17:16:21.9013838-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-6b6473b8-e82a-492e-a5a8-30bc312b748a</UniqueID>
     <UserID>REQ-29</UserID>
     <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
-    <Name>New Requirement</Name>
+    <Name>Obtenção do jogo</Name>
+    <Description>O jogo deverá ser baixado pelo usuário.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O jogo dever\'e1 ser baixado pelo usu\'e1rio.\par
+}
+</RichDescription>
     <Sequence>28</Sequence>
     <Type>Non-functional</Type>
     <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
     <DateAdded>2018-04-23T08:56:27.9776245-03:00</DateAdded>
-    <DateModified>2018-04-23T08:56:27.9776245-03:00</DateModified>
+    <DateModified>2018-04-23T17:17:32.0059406-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-1a038633-ea95-445c-b6f3-b9a07f62cb1d</UniqueID>
     <UserID>REQ-30</UserID>
     <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
-    <Name>New Requirement</Name>
+    <Name>Tela</Name>
+    <Description>O jogo irá funcionar em tela cheia.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O jogo ir\'e1 funcionar em tela cheia.\par
+}
+</RichDescription>
     <Sequence>29</Sequence>
     <Type>Non-functional</Type>
     <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
     <DateAdded>2018-04-23T08:56:28.6026298-03:00</DateAdded>
-    <DateModified>2018-04-23T08:56:28.6026298-03:00</DateModified>
+    <DateModified>2018-04-23T17:18:26.6982437-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-96b00110-8157-49e6-a706-d26cf9fa5bcc</UniqueID>
     <UserID>REQ-31</UserID>
     <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
-    <Name>New Requirement</Name>
+    <Name>Conexão</Name>
+    <Description> O jogo deverá ser offline.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20  O jogo dever\'e1 ser offline.\par
+}
+</RichDescription>
     <Sequence>30</Sequence>
     <Type>Non-functional</Type>
     <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
     <DateAdded>2018-04-23T08:56:29.2432659-03:00</DateAdded>
-    <DateModified>2018-04-23T08:56:29.2432659-03:00</DateModified>
+    <DateModified>2018-04-23T17:19:51.7556962-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-7f71329d-0e58-4520-b94b-4708ceaec9b7</UniqueID>
     <UserID>REQ-32</UserID>
     <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
-    <Name>New Requirement</Name>
+    <Name>Linguagem de programação</Name>
+    <Description> O jogo deverá ser desenvolvido na linguagem C#.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20  O jogo dever\'e1 ser desenvolvido na linguagem C#.\par
+}
+</RichDescription>
     <Sequence>31</Sequence>
     <Type>Non-functional</Type>
     <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
     <DateAdded>2018-04-23T08:56:29.8995246-03:00</DateAdded>
-    <DateModified>2018-04-23T08:56:29.8995246-03:00</DateModified>
+    <DateModified>2018-04-23T17:20:43.0469362-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-667030fb-8c2b-42c3-8cf4-0b09e84710df</UniqueID>
     <UserID>REQ-33</UserID>
     <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
-    <Name>New Requirement</Name>
+    <Name>Desenvolvimento </Name>
+    <Description>O jogo deve ser totalmente aderente aos principais conceitos de Orientação a Objeto.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O jogo deve ser totalmente aderente aos principais conceitos de Orienta\'e7\'e3o a Objeto.\par
+}
+</RichDescription>
     <Sequence>32</Sequence>
     <Type>Non-functional</Type>
     <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
     <DateAdded>2018-04-23T08:56:30.6807836-03:00</DateAdded>
-    <DateModified>2018-04-23T08:56:30.6807836-03:00</DateModified>
+    <DateModified>2018-04-23T17:21:18.2818544-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-33d450e7-773e-41f4-8512-9ca943347ddc</UniqueID>
     <UserID>REQ-34</UserID>
     <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
-    <Name>New Requirement</Name>
+    <Name>Tempo de resposta do Jogo</Name>
+    <Description>O tempo de resposta do jogo não deve ultrapassar 60 segundos.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O tempo de resposta do jogo n\'e3o deve ultrapassar 60 segundos.\par
+}
+</RichDescription>
     <Sequence>33</Sequence>
     <Type>Non-functional</Type>
     <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
     <DateAdded>2018-04-23T08:56:31.3995444-03:00</DateAdded>
-    <DateModified>2018-04-23T08:56:31.3995444-03:00</DateModified>
+    <DateModified>2018-04-23T17:21:41.706285-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-03cec025-4da1-4155-aa09-44437814ccbb</UniqueID>
     <UserID>REQ-35</UserID>
     <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
-    <Name>New Requirement</Name>
+    <Name>Modo de jogar</Name>
+    <Description>O jogo deve ser intuitivo.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O jogo deve ser intuitivo.\par
+}
+</RichDescription>
     <Sequence>34</Sequence>
     <Type>Non-functional</Type>
     <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
     <DateAdded>2018-04-23T08:56:32.7400309-03:00</DateAdded>
-    <DateModified>2018-04-23T08:56:32.7400309-03:00</DateModified>
+    <DateModified>2018-04-23T17:22:59.3346792-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <UserID>
