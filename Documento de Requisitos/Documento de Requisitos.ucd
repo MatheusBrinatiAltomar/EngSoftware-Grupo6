@@ -19,11 +19,11 @@
     <UniqueID>REQ-762e5ea7-3054-456f-936a-b824e3cc7091</UniqueID>
     <UserID>REQ-1</UserID>
     <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
-    <Name>Requisito Funcional 1 </Name>
-    <Description>Primeiro Requisito funcional</Description>
+    <Name>Menu Inicial </Name>
+    <Description>O jogo terá um menu inicial com as opções “Jogar”, “Opções” e “Sair”. A opção “Jogar” iniciará o jogo. A opção “Opções” mostrará uma tela com uma barra de deslizar para alterar o volume do jogo, a opção de trocar de nome e a opção de excluir o próprio nome. A opção “Sair” fecha o jogo.</Description>
     <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
 {\colortbl ;\red0\green0\blue0;}
-\viewkind4\uc1\pard\cf1\f0\fs20 Primeiro Requisito funcional\par
+\viewkind4\uc1\pard\cf1\f0\fs20 O jogo ter\'e1 um menu inicial com as op\'e7\'f5es \ldblquote Jogar\rdblquote , \ldblquote Op\'e7\'f5es\rdblquote  e \ldblquote Sair\rdblquote . A op\'e7\'e3o \ldblquote Jogar\rdblquote  iniciar\'e1 o jogo. A op\'e7\'e3o \ldblquote Op\'e7\'f5es\rdblquote  mostrar\'e1 uma tela com uma barra de deslizar para alterar o volume do jogo, a op\'e7\'e3o de trocar de nome e a op\'e7\'e3o de excluir o pr\'f3prio nome. A op\'e7\'e3o \ldblquote Sair\rdblquote  fecha o jogo.\par
 }
 </RichDescription>
     <Sequence>0</Sequence>
@@ -34,7 +34,643 @@
     <AssignedTo />
     <Release />
     <DateAdded>2018-04-19T14:56:02.1947975-03:00</DateAdded>
-    <DateModified>2018-04-19T14:56:45.3557408-03:00</DateModified>
+    <DateModified>2018-04-23T08:40:08.6629154-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-0df31618-459c-4851-9fba-4388c09dc064</UniqueID>
+    <UserID>REQ-2</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>Temática</Name>
+    <Description>O jogo deverá permitir que o jogador resolva puzzles e responda perguntas com o tema de Levantamento de Requisitos.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O jogo dever\'e1 permitir que o jogador resolva puzzles e responda perguntas com o tema de Levantamento de Requisitos.\par
+}
+</RichDescription>
+    <Sequence>1</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2018-04-23T08:49:30.9175758-03:00</DateAdded>
+    <DateModified>2018-04-23T08:50:06.1404223-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-aab6176b-3bdd-4b7b-83d7-4fcbe0849260</UniqueID>
+    <UserID>REQ-3</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>Salvar Progresso</Name>
+    <Description>O jogo deve permitir ao jogador salvar seu progresso.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O jogo deve permitir ao jogador salvar seu progresso.\par
+}
+</RichDescription>
+    <Sequence>2</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2018-04-23T08:50:40.4460493-03:00</DateAdded>
+    <DateModified>2018-04-23T08:51:13.968084-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-2ed5662f-dacb-4218-a670-da63cd77b2de</UniqueID>
+    <UserID>REQ-4</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>Nome</Name>
+    <Description>O jogo deve permitir que o jogador insira seu nome no início de uma nova aventura.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O jogo deve permitir que o jogador insira seu nome no in\'edcio de uma nova aventura.\par
+}
+</RichDescription>
+    <Sequence>3</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2018-04-23T08:51:21.899466-03:00</DateAdded>
+    <DateModified>2018-04-23T08:53:43.447647-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-d90c164b-e2e1-4fac-ab29-363536313991</UniqueID>
+    <UserID>REQ-5</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>Carregar Progresso</Name>
+    <Description>O jogo deve permitir que o jogador carregue seu progresso a partir do nome salvo.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O jogo deve permitir que o jogador carregue seu progresso a partir do nome salvo.\par
+}
+</RichDescription>
+    <Sequence>4</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2018-04-23T08:52:32.8030342-03:00</DateAdded>
+    <DateModified>2018-04-23T08:53:34.318332-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-589a559a-df24-4a3f-9e68-f3cb1a7ca589</UniqueID>
+    <UserID>REQ-6</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>Contabilizar Pontuação</Name>
+    <Description>A pontuação do jogo será contabilizada pela quantidade de tempo que o jogador leva para passar pelos puzzles. Essa pontuação também será salva.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 A pontua\'e7\'e3o do jogo ser\'e1 contabilizada pela quantidade de tempo que o jogador leva para passar pelos puzzles. Essa pontua\'e7\'e3o tamb\'e9m ser\'e1 salva.\par
+}
+</RichDescription>
+    <Sequence>5</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2018-04-23T08:53:45.2132963-03:00</DateAdded>
+    <DateModified>2018-04-23T09:01:58.4300118-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-078e2a95-1264-4a56-a2a0-6df626313037</UniqueID>
+    <UserID>REQ-7</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>Ranking</Name>
+    <Description>O jogo deve gerar um ranking com a colocação de todos os jogadores que terminaram o jogo naquela máquina.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O jogo deve gerar um ranking com a coloca\'e7\'e3o de todos os jogadores que terminaram o jogo naquela m\'e1quina.\par
+}
+</RichDescription>
+    <Sequence>6</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2018-04-23T08:54:09.7658201-03:00</DateAdded>
+    <DateModified>2018-04-23T08:54:40.1701092-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-c82f0c5e-a746-4a7c-8275-00c569a3c5dd</UniqueID>
+    <UserID>REQ-8</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>Propósito</Name>
+    <Description>O jogo tem propósito educativo, porém nunca deve ser deixado de lado que todo jogo deve ser divertido e desafiador.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O jogo tem prop\'f3sito educativo, por\'e9m nunca deve ser deixado de lado que todo jogo deve ser divertido e desafiador.\par
+}
+</RichDescription>
+    <Sequence>7</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2018-04-23T08:54:44.9914625-03:00</DateAdded>
+    <DateModified>2018-04-23T08:55:53.2820468-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-d1a33bd0-93b4-4938-8643-d5d8b8d405a6</UniqueID>
+    <UserID>REQ-9</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>Incentivo</Name>
+    <Description>O jogador deve ser incentivado a procurar respostas para as perguntas que ele não conseguir responder.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O jogador deve ser incentivado a procurar respostas para as perguntas que ele n\'e3o conseguir responder.\par
+}
+</RichDescription>
+    <Sequence>8</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2018-04-23T08:56:02.1897462-03:00</DateAdded>
+    <DateModified>2018-04-23T08:56:57.1412083-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-c698f645-e886-49d1-b481-85f43a48b7d0</UniqueID>
+    <UserID>REQ-10</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>Pausar</Name>
+    <Description>O jogo deve permitir o jogador a pausar o jogo através de um botão no canto superior esquerdo.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O jogo deve permitir o jogador a pausar o jogo atrav\'e9s de um bot\'e3o no canto superior esquerdo.\par
+}
+</RichDescription>
+    <Sequence>9</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2018-04-23T08:56:05.5336102-03:00</DateAdded>
+    <DateModified>2018-04-23T08:57:17.8156367-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-3a8f22c7-bd8e-43c1-abcf-c828296aa64e</UniqueID>
+    <UserID>REQ-11</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>Voltar ao Menu</Name>
+    <Description>O jogo no estado de pausa deve permitir o jogador a voltar para o menu inicial.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O jogo no estado de pausa deve permitir o jogador a voltar para o menu inicial.\par
+}
+</RichDescription>
+    <Sequence>10</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2018-04-23T08:56:06.7680033-03:00</DateAdded>
+    <DateModified>2018-04-23T08:58:27.4868514-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-965f9f5a-370f-4f80-8720-76a7acbce030</UniqueID>
+    <UserID>REQ-12</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>Fechar o Jogo</Name>
+    <Description>O jogo no estado de pausa deve permitir o jogador a fechar o jogo.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O jogo no estado de pausa deve permitir o jogador a fechar o jogo.\par
+}
+</RichDescription>
+    <Sequence>11</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2018-04-23T08:56:07.8773515-03:00</DateAdded>
+    <DateModified>2018-04-23T08:58:53.6956296-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-9c690163-a40a-45e1-9fec-1c2a8d1556cc</UniqueID>
+    <UserID>REQ-13</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>Número de Fases</Name>
+    <Description>O jogo deve ter &lt;número de fases&gt; de fases.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O jogo deve ter &lt;n\'famero de fases&gt; de fases.\par
+}
+</RichDescription>
+    <Sequence>12</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2018-04-23T08:56:10.3766607-03:00</DateAdded>
+    <DateModified>2018-04-23T08:59:20.9142282-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-352a9fae-fb86-414a-afb7-907cad4424ce</UniqueID>
+    <UserID>REQ-14</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>Código das Fases</Name>
+    <Description>O jogo deve permitir que o jogador acesse cada fase através de códigos(isso estando no menu principal).</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O jogo deve permitir que o jogador acesse cada fase atrav\'e9s de c\'f3digos(isso estando no menu principal).\par
+}
+</RichDescription>
+    <Sequence>13</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2018-04-23T08:56:11.3610508-03:00</DateAdded>
+    <DateModified>2018-04-23T08:59:47.5165443-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-40f49ef1-45d3-4549-9644-5fb90faf9133</UniqueID>
+    <UserID>REQ-15</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>Fases</Name>
+    <Description>A requisitolândia é formada por diversas áreas. Cada área é representada por uma fase. Cada fase deve ser composta por um puzzle e um número X de perguntas. O conteúdo de um puzzle ou pergunta é aleatório.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 A requisitol\'e2ndia \'e9 formada por diversas \'e1reas. Cada \'e1rea \'e9 representada por uma fase. Cada fase deve ser composta por um puzzle e um n\'famero X de perguntas. O conte\'fado de um puzzle ou pergunta \'e9 aleat\'f3rio.\par
+}
+</RichDescription>
+    <Sequence>14</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2018-04-23T08:56:12.4391893-03:00</DateAdded>
+    <DateModified>2018-04-23T09:00:05.7842422-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-e3823545-0680-43d0-bc4e-652d7d0cdc3d</UniqueID>
+    <UserID>REQ-16</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>Puzzles</Name>
+    <Description>Os puzzles devem ser construídos de maneira que eles mantenham sua mecânica, mas que seja possível alternar o conteúdo (com isso alterando sua resposta). Explicando de outra maneira, deve ser implementado apenas o “corpo“ do puzzle. Ao ser instanciado o jogo aleatoriamente escolheria um puzzle de um conjunto de dados. O jogo leria esse dado do puzzle salvo e depois o jogo carregaria os dados do puzzle para mostrar ao jogador.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 Os puzzles devem ser constru\'eddos de maneira que eles mantenham sua mec\'e2nica, mas que seja poss\'edvel alternar o conte\'fado (com isso alterando sua resposta). Explicando de outra maneira, deve ser implementado apenas o \ldblquote corpo\ldblquote  do puzzle. Ao ser instanciado o jogo aleatoriamente escolheria um puzzle de um conjunto de dados. O jogo leria esse dado do puzzle salvo e depois o jogo carregaria os dados do puzzle para mostrar ao jogador.\par
+}
+</RichDescription>
+    <Sequence>15</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2018-04-23T08:56:13.4860268-03:00</DateAdded>
+    <DateModified>2018-04-23T09:00:30.2744461-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-a0faa8dc-33d4-498d-a9aa-acc4cfec326e</UniqueID>
+    <UserID>REQ-17</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>Pontuação</Name>
+    <Description>Como a pontuação do jogo é dada pelo progresso de tempo. O tempo só é começado a contar a partir do momento que o jogador começa um “novo jogo”. Ao salvar o jogo um contador de tempo também é salvo. Quando o jogador inicia a aventura a partir de um estado anterior “carregar jogo”, o contador é inicializado a partir do valor salvo. De outra maneira, o contador de tempo é parado sempre que o jogador está em um dos menus, sendo o menu principal ou um menu de “pause game”. </Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 Como a pontua\'e7\'e3o do jogo \'e9 dada pelo progresso de tempo. O tempo s\'f3 \'e9 come\'e7ado a contar a partir do momento que o jogador come\'e7a um \ldblquote novo jogo\rdblquote . Ao salvar o jogo um contador de tempo tamb\'e9m \'e9 salvo. Quando o jogador inicia a aventura a partir de um estado anterior \ldblquote carregar jogo\rdblquote , o contador \'e9 inicializado a partir do valor salvo. De outra maneira, o contador de tempo \'e9 parado sempre que o jogador est\'e1 em um dos menus, sendo o menu principal ou um menu de \ldblquote pause game\rdblquote . \par
+}
+</RichDescription>
+    <Sequence>16</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2018-04-23T08:56:15.0452067-03:00</DateAdded>
+    <DateModified>2018-04-23T09:01:44.4318293-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-d9450dbd-30c4-4bf2-be37-70eee4289ed2</UniqueID>
+    <UserID>REQ-18</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>Alterar Nome</Name>
+    <Description>O jogo deverá permitir ao jogador alterar seu nome na tela de “Opções” do Menu Inicial.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O jogo dever\'e1 permitir ao jogador alterar seu nome na tela de \ldblquote Op\'e7\'f5es\rdblquote  do Menu Inicial.\par
+}
+</RichDescription>
+    <Sequence>17</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2018-04-23T08:56:19.3733202-03:00</DateAdded>
+    <DateModified>2018-04-23T09:02:19.8180555-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-523543a8-de0b-4975-b02e-e628b5829b2f</UniqueID>
+    <UserID>REQ-19</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>Deletar Progresso</Name>
+    <Description>O jogo deverá permitir ao jogador deletar seu progresso deletando seu nome do registro na tela “Opções” do Menu Inicial.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O jogo dever\'e1 permitir ao jogador deletar seu progresso deletando seu nome do registro na tela \ldblquote Op\'e7\'f5es\rdblquote  do Menu Inicial.\par
+}
+</RichDescription>
+    <Sequence>18</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2018-04-23T08:56:20.7952141-03:00</DateAdded>
+    <DateModified>2018-04-23T09:02:44.222416-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-69ffdbda-69ab-4c08-883f-755322d1bf67</UniqueID>
+    <UserID>REQ-20</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>Alterar Volume</Name>
+    <Description>O jogo deverá permitir ao jogador, alterar o volume do jogo por meio de uma barra de deslizamento, tanto na tela “Opções” do Menu Inicial quanto na tela de pause.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O jogo dever\'e1 permitir ao jogador, alterar o volume do jogo por meio de uma barra de deslizamento, tanto na tela \ldblquote Op\'e7\'f5es\rdblquote  do Menu Inicial quanto na tela de pause.\par
+}
+</RichDescription>
+    <Sequence>19</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2018-04-23T08:56:21.8734227-03:00</DateAdded>
+    <DateModified>2018-04-23T09:03:20.5686988-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-d0051187-b7b9-409c-8e9c-92048e4bca02</UniqueID>
+    <UserID>REQ-21</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>Tela de Creditos</Name>
+    <Description>O jogo exibirá, após ser concluído, uma tela de créditos.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O jogo exibir\'e1, ap\'f3s ser conclu\'eddo, uma tela de cr\'e9ditos.\par
+}
+</RichDescription>
+    <Sequence>20</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2018-04-23T08:56:22.7275549-03:00</DateAdded>
+    <DateModified>2018-04-23T09:03:39.056688-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-494b6cd5-58a6-4241-ad11-0e03fd86718a</UniqueID>
+    <UserID>REQ-22</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>Timer</Name>
+    <Description>O jogo exibirá um timer indicando quanto tempo falta para completar cada quebra cabeça e pergunta, em um máximo de 5 minutos. Se o jogador esgotar esse tempo o jogo continua, mas isso indica que ele conseguiu a menor quantidade de pontos possíveis naquela fase. </Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O jogo exibir\'e1 um timer indicando quanto tempo falta para completar cada quebra cabe\'e7a e pergunta, em um m\'e1ximo de 5 minutos. Se o jogador esgotar esse tempo o jogo continua, mas isso indica que ele conseguiu a menor quantidade de pontos poss\'edveis naquela fase. \par
+}
+</RichDescription>
+    <Sequence>21</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2018-04-23T08:56:23.4618866-03:00</DateAdded>
+    <DateModified>2018-04-23T09:03:55.3007969-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-fe8f6257-fa7c-4288-8575-8cd1e6b619eb</UniqueID>
+    <UserID>REQ-23</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>Finais</Name>
+    <Description>O jogo deve apresentar um final “ruim” ou insatisfatório  se o jogador não conseguir um mínimo de pontos. Apresentando um final bom se o jogador conseguiu boa pontuação. </Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O jogo deve apresentar um final \ldblquote ruim\rdblquote  ou insatisfat\'f3rio  se o jogador n\'e3o conseguir um m\'ednimo de pontos. Apresentando um final bom se o jogador conseguiu boa pontua\'e7\'e3o. \par
+}
+</RichDescription>
+    <Sequence>22</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2018-04-23T08:56:24.1181979-03:00</DateAdded>
+    <DateModified>2018-04-23T09:04:29.7743997-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-027799d1-4216-4e2b-80e9-9fc464233747</UniqueID>
+    <UserID>REQ-24</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>New Requirement</Name>
+    <Sequence>23</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2018-04-23T08:56:24.727581-03:00</DateAdded>
+    <DateModified>2018-04-23T09:04:46.1731925-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-2bed47a8-5dcc-4934-825a-9e1f2bb05c7a</UniqueID>
+    <UserID>REQ-25</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>New Requirement</Name>
+    <Sequence>24</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2018-04-23T08:56:25.3681615-03:00</DateAdded>
+    <DateModified>2018-04-23T09:04:50.961788-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-35ba0e17-8a14-4223-b476-5cfe2a523e7e</UniqueID>
+    <UserID>REQ-26</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>New Requirement</Name>
+    <Sequence>25</Sequence>
+    <Type>Non-functional</Type>
+    <Priority>1</Priority>
+    <DateAdded>2018-04-23T08:56:26.0401001-03:00</DateAdded>
+    <DateModified>2018-04-23T08:56:26.0401001-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-3541c838-78e1-4ec3-8691-822a81ca9b4a</UniqueID>
+    <UserID>REQ-27</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>New Requirement</Name>
+    <Sequence>26</Sequence>
+    <Type>Non-functional</Type>
+    <Priority>1</Priority>
+    <DateAdded>2018-04-23T08:56:26.680752-03:00</DateAdded>
+    <DateModified>2018-04-23T08:56:26.680752-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-1362fb3d-8427-4159-9be5-a3f572afab73</UniqueID>
+    <UserID>REQ-28</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>New Requirement</Name>
+    <Sequence>27</Sequence>
+    <Type>Non-functional</Type>
+    <Priority>1</Priority>
+    <DateAdded>2018-04-23T08:56:27.336991-03:00</DateAdded>
+    <DateModified>2018-04-23T08:56:27.336991-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-6b6473b8-e82a-492e-a5a8-30bc312b748a</UniqueID>
+    <UserID>REQ-29</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>New Requirement</Name>
+    <Sequence>28</Sequence>
+    <Type>Non-functional</Type>
+    <Priority>1</Priority>
+    <DateAdded>2018-04-23T08:56:27.9776245-03:00</DateAdded>
+    <DateModified>2018-04-23T08:56:27.9776245-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-1a038633-ea95-445c-b6f3-b9a07f62cb1d</UniqueID>
+    <UserID>REQ-30</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>New Requirement</Name>
+    <Sequence>29</Sequence>
+    <Type>Non-functional</Type>
+    <Priority>1</Priority>
+    <DateAdded>2018-04-23T08:56:28.6026298-03:00</DateAdded>
+    <DateModified>2018-04-23T08:56:28.6026298-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-96b00110-8157-49e6-a706-d26cf9fa5bcc</UniqueID>
+    <UserID>REQ-31</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>New Requirement</Name>
+    <Sequence>30</Sequence>
+    <Type>Non-functional</Type>
+    <Priority>1</Priority>
+    <DateAdded>2018-04-23T08:56:29.2432659-03:00</DateAdded>
+    <DateModified>2018-04-23T08:56:29.2432659-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-7f71329d-0e58-4520-b94b-4708ceaec9b7</UniqueID>
+    <UserID>REQ-32</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>New Requirement</Name>
+    <Sequence>31</Sequence>
+    <Type>Non-functional</Type>
+    <Priority>1</Priority>
+    <DateAdded>2018-04-23T08:56:29.8995246-03:00</DateAdded>
+    <DateModified>2018-04-23T08:56:29.8995246-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-667030fb-8c2b-42c3-8cf4-0b09e84710df</UniqueID>
+    <UserID>REQ-33</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>New Requirement</Name>
+    <Sequence>32</Sequence>
+    <Type>Non-functional</Type>
+    <Priority>1</Priority>
+    <DateAdded>2018-04-23T08:56:30.6807836-03:00</DateAdded>
+    <DateModified>2018-04-23T08:56:30.6807836-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-33d450e7-773e-41f4-8512-9ca943347ddc</UniqueID>
+    <UserID>REQ-34</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>New Requirement</Name>
+    <Sequence>33</Sequence>
+    <Type>Non-functional</Type>
+    <Priority>1</Priority>
+    <DateAdded>2018-04-23T08:56:31.3995444-03:00</DateAdded>
+    <DateModified>2018-04-23T08:56:31.3995444-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-03cec025-4da1-4155-aa09-44437814ccbb</UniqueID>
+    <UserID>REQ-35</UserID>
+    <ParentID>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</ParentID>
+    <Name>New Requirement</Name>
+    <Sequence>34</Sequence>
+    <Type>Non-functional</Type>
+    <Priority>1</Priority>
+    <DateAdded>2018-04-23T08:56:32.7400309-03:00</DateAdded>
+    <DateModified>2018-04-23T08:56:32.7400309-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <UserID>
@@ -47,7 +683,7 @@
   </UserID>
   <UserID>
     <DefaultPrefix>REQ-</DefaultPrefix>
-    <NextValue>2</NextValue>
+    <NextValue>36</NextValue>
   </UserID>
   <UserID>
     <DefaultPrefix>DEF-</DefaultPrefix>

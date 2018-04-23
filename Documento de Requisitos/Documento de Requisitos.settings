@@ -2,7 +2,7 @@
 <ModelSettings xmlns:Serlio="http://www.serliosoft.com/modelsettings">
   <PackageId>P-96048d19-6a11-44c1-b7b5-db5ef868e36a</PackageId>
   <ShowDescendants>true</ShowDescendants>
-  <ProjectOpenedTabName>pgStart</ProjectOpenedTabName>
+  <ProjectOpenedTabName>pgRequirements</ProjectOpenedTabName>
   <Sorting>
     <UseCaseViewSortColumns>
       <string>Name</string>
@@ -35,7 +35,7 @@
       <boolean>false</boolean>
     </StoryViewSortOrder>
     <RequirementViewSortColumns>
-      <string>Name</string>
+      <string>UserID</string>
       <string />
       <string />
     </RequirementViewSortColumns>
