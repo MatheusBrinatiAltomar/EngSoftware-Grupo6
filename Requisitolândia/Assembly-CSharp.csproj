@@ -51,13 +51,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\loadAndReadTxt.cs" />
-     <Compile Include="Assets\NameLoad.cs" />
-     <Compile Include="Assets\nomeUsuario.cs" />
-     <Compile Include="Assets\OpcoesScript.cs" />
-     <Compile Include="Assets\ScriptMenuPrincipal.cs" />
      <Compile Include="Assets\Scripts\getName.cs" />
-     <Compile Include="Assets\teste.cs" />
+     <Compile Include="Assets\Scripts\loadAndReadTxt.cs" />
+     <Compile Include="Assets\Scripts\NameLoad.cs" />
+     <Compile Include="Assets\Scripts\nomeUsuario.cs" />
+     <Compile Include="Assets\Scripts\OpcoesScript.cs" />
+     <Compile Include="Assets\Scripts\ScriptMenuPrincipal.cs" />
+     <Compile Include="Assets\Scripts\teste.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -115,7 +115,7 @@
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
      <None Include="Assets\Resources\Fichas.txt" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>C:/Users/HAL/Documents/GitHub/EngSoftware-Grupo6/Requisitolândia/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>C:/Users/vinic/Documents/GitHub/EngSoftware-Grupo6/Requisitolândia/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -145,16 +145,16 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="TextMeshPro-2017.1-Editor">
- <HintPath>C:/Users/HAL/Documents/GitHub/EngSoftware-Grupo6/Requisitolândia/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.1-Editor.dll</HintPath>
+ <HintPath>C:/Users/vinic/Documents/GitHub/EngSoftware-Grupo6/Requisitolândia/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.1-Editor.dll</HintPath>
  </Reference>
  <Reference Include="TextMeshPro-2017.1-Runtime">
- <HintPath>C:/Users/HAL/Documents/GitHub/EngSoftware-Grupo6/Requisitolândia/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.1-Runtime.dll</HintPath>
+ <HintPath>C:/Users/vinic/Documents/GitHub/EngSoftware-Grupo6/Requisitolândia/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.1-Runtime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Users/HAL/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@1.0.1/UnityEngine.Analytics.dll</HintPath>
+ <HintPath>C:/Users/vinic/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@1.0.1/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Purchasing">
- <HintPath>C:/Users/HAL/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/UnityEngine.Purchasing.dll</HintPath>
+ <HintPath>C:/Users/vinic/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
