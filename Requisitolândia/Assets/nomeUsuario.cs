@@ -1,28 +1,45 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class nomeUsuario : MonoBehaviour {
+public class nomeUsuario : MonoBehaviour
+{
     public Text textUm;
     public GameObject usuario;
-    public string comando;
-	// Use this for initialization
-	void Start () {
-        usuario = GameObject.Find("nomeusr");
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    public InputField input;
+    public string usrName;
+    public loadAndReadTxt script;
 
-        textUm = usuario.GetComponent<Text>();
-        string comando2 = textUm.text;
+    
 
-        comando = textUm.text;
+    // Use this for initialization
+    void Start()
+    {
+        script = GameObject.Find("Controller").GetComponent<loadAndReadTxt>();
+        input = GameObject.Find("InputField").GetComponent<InputField>();
+    }
 
-        textUm.text = "Malu linda";
-        print(comando + "malu princesa");
-        
+    // Update is called once per frame
+    void Update()
+    {
+     
 
-	}
+
+    }
+
+   public void Continuar()
+    {
+        print("alo");
+        usrName = input.text;
+        script.WriteCharacterName(usrName);
+        print(usrName);
+        SceneManager.LoadScene("Scenes/Fase1");
+    }
+
+    public void Voltar()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 }

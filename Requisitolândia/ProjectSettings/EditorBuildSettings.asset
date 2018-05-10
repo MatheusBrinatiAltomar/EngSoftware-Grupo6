@@ -11,3 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Jogo.unity
     guid: 499fee781f33acb4aa6c089a402c2a4e
+  - enabled: 1
+    path: Assets/Scenes/Fase1.unity
+    guid: 6ec36efefd98aef49b96538175d53911
+  - enabled: 1
+    path: Assets/Scenes/nameInput.unity
+    guid: b1d874fc40f3f09498557d80c75f8c1d

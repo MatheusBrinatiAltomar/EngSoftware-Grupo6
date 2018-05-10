@@ -6,8 +6,9 @@ public class ScriptMenuPrincipal : MonoBehaviour
 {
 	public void JogarJogo()
 	{
-		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-	}
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene("Scenes/nameInput");
+    }
 
 	public void SairJogo()
 	{
