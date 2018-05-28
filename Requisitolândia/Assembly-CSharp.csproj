@@ -61,7 +61,10 @@
      <Compile Include="Assets\Scripts\Scripts Tutorial Quiz\AnswerData.cs" />
      <Compile Include="Assets\Scripts\Scripts Tutorial Quiz\DataController.cs" />
      <Compile Include="Assets\Scripts\Scripts Tutorial Quiz\GameController.cs" />
+     <Compile Include="Assets\Scripts\Scripts Tutorial Quiz\GameData.cs" />
+     <Compile Include="Assets\Scripts\Scripts Tutorial Quiz\GameDataEditor.cs" />
      <Compile Include="Assets\Scripts\Scripts Tutorial Quiz\MenuScreenController.cs" />
+     <Compile Include="Assets\Scripts\Scripts Tutorial Quiz\PlayerProgress.cs" />
      <Compile Include="Assets\Scripts\Scripts Tutorial Quiz\QuestionData.cs" />
      <Compile Include="Assets\Scripts\Scripts Tutorial Quiz\RoundData.cs" />
      <Compile Include="Assets\Scripts\Scripts Tutorial Quiz\SimpleObjectPool.cs" />
