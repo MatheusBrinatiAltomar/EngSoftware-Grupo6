@@ -3,10 +3,11 @@ using UnityEngine.SceneManagement;
 using System.Collections;
 using System.IO;                                                        // The System.IO namespace contains functions related to loading and saving files
 
-public class DataController : MonoBehaviour 
+public class DataController : MonoBehaviour
 {
     private RoundData[] allRoundData;
     private PlayerProgress playerProgress;
+    private int usrHighScore;
 
     private string gameDataFileName = "data.json";
 
@@ -20,7 +21,7 @@ public class DataController : MonoBehaviour
 
         SceneManager.LoadScene("Scenes/MenuScreen");
     }
-        
+
     public RoundData GetCurrentRoundData()
     {
         // If we wanted to return different rounds, we could do that here
@@ -32,16 +33,16 @@ public class DataController : MonoBehaviour
     public void SubmitNewPlayerScore(int newScore)
     {
         // If newScore is greater than playerProgress.highestScore, update playerProgress with the new value and call SavePlayerProgress()
-        if(newScore > playerProgress.highestScore)
+        if (newScore > usrHighScore)
         {
-            playerProgress.highestScore = newScore;
+            usrHighScore = newScore;
             SavePlayerProgress();
         }
     }
 
     public int GetHighestPlayerScore()
     {
-        return playerProgress.highestScore;
+        return usrHighScore;
     }
 
     private void LoadGameData()
@@ -50,10 +51,10 @@ public class DataController : MonoBehaviour
         // Application.StreamingAssets points to Assets/StreamingAssets in the Editor, and the StreamingAssets folder in a build
         string filePath = Path.Combine(Application.streamingAssetsPath, gameDataFileName);
 
-        if(File.Exists(filePath))
+        if (File.Exists(filePath))
         {
             // Read the json from the file into a string
-            string dataAsJson = File.ReadAllText(filePath); 
+            string dataAsJson = File.ReadAllText(filePath);
             // Pass the json to JsonUtility, and tell it to create a GameData object from it
             GameData loadedData = JsonUtility.FromJson<GameData>(dataAsJson);
 
@@ -69,20 +70,17 @@ public class DataController : MonoBehaviour
     // This function could be extended easily to handle any additional data we wanted to store in our PlayerProgress object
     private void LoadPlayerProgress()
     {
-        // Create a new PlayerProgress object
-        playerProgress = new PlayerProgress();
-
-        // If PlayerPrefs contains a key called "highestScore", set the value of playerProgress.highestScore using the value associated with that key
-        if(PlayerPrefs.HasKey("highestScore"))
+        if (PlayerPrefs.HasKey("highestScore"))
         {
-            playerProgress.highestScore = PlayerPrefs.GetInt("highestScore");
+            usrHighScore = PlayerPrefs.GetInt("highestScore");
         }
     }
+
 
     // This function could be extended easily to handle any additional data we wanted to store in our PlayerProgress object
     private void SavePlayerProgress()
     {
         // Save the value playerProgress.highestScore to PlayerPrefs, with a key of "highestScore"
-        PlayerPrefs.SetInt("highestScore", playerProgress.highestScore);
+        PlayerPrefs.SetInt("highestScore", usrHighScore);
     }
 }
