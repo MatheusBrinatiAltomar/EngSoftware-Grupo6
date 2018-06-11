@@ -108,7 +108,7 @@ public class loadAndReadTxt : MonoBehaviour
     {
         //Escreve o nome de um personagem na lista contendo os personagens de uma seção
         string path = GetPathToList();
-        //File.AppendAllText(path, name + Environment.NewLine);
+        File.AppendAllText(path, name + Environment.NewLine);
         File.WriteAllText("Assets/Resources/Atual.txt", name);
 
     }

@@ -51,11 +51,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Data.cs" />
      <Compile Include="Assets\Scripts\getName.cs" />
      <Compile Include="Assets\Scripts\loadAndReadTxt.cs" />
      <Compile Include="Assets\Scripts\NameLoad.cs" />
      <Compile Include="Assets\Scripts\nomeUsuario.cs" />
      <Compile Include="Assets\Scripts\OpcoesScript.cs" />
+     <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\ScriptMenuPrincipal.cs" />
      <Compile Include="Assets\Scripts\Scripts Tutorial Quiz\AnswerButton.cs" />
      <Compile Include="Assets\Scripts\Scripts Tutorial Quiz\AnswerData.cs" />
@@ -69,6 +71,7 @@
      <Compile Include="Assets\Scripts\Scripts Tutorial Quiz\RoundData.cs" />
      <Compile Include="Assets\Scripts\Scripts Tutorial Quiz\SimpleObjectPool.cs" />
      <Compile Include="Assets\Scripts\teste.cs" />
+     <Compile Include="Assets\Scripts\User.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

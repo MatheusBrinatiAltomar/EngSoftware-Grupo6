@@ -31,10 +31,8 @@ public class nomeUsuario : MonoBehaviour
 
    public void Continuar()
     {
-        print("alo");
         usrName = input.text;
         script.WriteCharacterName(usrName);
-        print(usrName);
         SceneManager.LoadScene("Scenes/Fase1");
     }
 
