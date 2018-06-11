@@ -140,23 +140,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bfb802e2df930040be37cc59c36e58e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allRoundData:
-  - name: Round 1
-    timeLimitInSeconds: 20
-    pointsAddedForCorrectAnswer: 1
-    questions:
-    - questionText: 2+2 = ?
-      answers:
-      - answerText: 4
-        isCorrect: 1
-      - answerText: 5
-        isCorrect: 0
-    - questionText: 3+3 = ?
-      answers:
-      - answerText: 6
-        isCorrect: 1
-      - answerText: 5
-        isCorrect: 0
 --- !u!4 &1932711725
 Transform:
   m_ObjectHideFlags: 0
