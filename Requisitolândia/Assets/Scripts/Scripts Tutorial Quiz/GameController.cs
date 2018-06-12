@@ -12,7 +12,8 @@ public class GameController : MonoBehaviour
     public Transform answerButtonParent;
 
     public GameObject questionDisplay;
-    public GameObject roundEndDisplay;
+    public GameObject roundLostDisplay;
+    public GameObject roundWinDisplay;
     public Text highScoreDisplay;
 
     private DataController dataController;
@@ -115,7 +116,14 @@ public class GameController : MonoBehaviour
         highScoreDisplay.text = dataController.GetHighestPlayerScore().ToString();
 
         questionDisplay.SetActive(false);
-        roundEndDisplay.SetActive(true);
+        if(timeRemaining<=0)
+        {
+            roundLostDisplay.SetActive(true);
+        }
+        else
+        {
+            roundWinDisplay.SetActive(true);
+        }
     }
 
     public void ReturnToMenu()
