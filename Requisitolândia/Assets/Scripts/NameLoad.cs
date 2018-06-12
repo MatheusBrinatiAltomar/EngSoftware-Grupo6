@@ -41,7 +41,6 @@ public class NameLoad : MonoBehaviour {
         string path = null;
         try
         {
-            // Caminho para arquivo contendo o nome de todas as fichas adcionadas a "sessão"
             return "Assets/Resources/Atual.txt";
         }
         catch (Exception e)
@@ -54,7 +53,6 @@ public class NameLoad : MonoBehaviour {
 
     public void WriteCharacterName(string name)
     {
-        //Escreve o nome de um personagem na lista contendo os personagens de uma seção
         string path = GetPathToList();
         File.WriteAllText("Assets/Resources/Atual.txt", name + Environment.NewLine);
 

@@ -59,11 +59,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Data.cs" />
     <Compile Include="Assets\Scripts\getName.cs" />
     <Compile Include="Assets\Scripts\loadAndReadTxt.cs" />
     <Compile Include="Assets\Scripts\NameLoad.cs" />
     <Compile Include="Assets\Scripts\nomeUsuario.cs" />
     <Compile Include="Assets\Scripts\OpcoesScript.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\ScriptMenuPrincipal.cs" />
     <Compile Include="Assets\Scripts\Scripts Tutorial Quiz\AnswerButton.cs" />
     <Compile Include="Assets\Scripts\Scripts Tutorial Quiz\AnswerData.cs" />
@@ -77,6 +79,7 @@
     <Compile Include="Assets\Scripts\Scripts Tutorial Quiz\RoundData.cs" />
     <Compile Include="Assets\Scripts\Scripts Tutorial Quiz\SimpleObjectPool.cs" />
     <Compile Include="Assets\Scripts\teste.cs" />
+    <Compile Include="Assets\Scripts\User.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -134,10 +137,10 @@
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
     <None Include="Assets\Resources\Fichas.txt" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/Malu Magalhães/Documents/EngSoftware-Grupo6-matheus/EngSoftware-Grupo6-matheus/Requisitolândia/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Malu Magalhães/Documents/Requisitolândia/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/Malu Magalhães/Documents/EngSoftware-Grupo6-matheus/EngSoftware-Grupo6-matheus/Requisitolândia/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/Malu Magalhães/Documents/Requisitolândia/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -314,7 +317,7 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Unity.Locator.dll</HintPath>
     </Reference>
     <Reference Include="Facebook.Unity.Settings">
-      <HintPath>C:/Users/Malu Magalhães/Documents/EngSoftware-Grupo6-matheus/EngSoftware-Grupo6-matheus/Requisitolândia/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+      <HintPath>C:/Users/Malu Magalhães/Documents/Requisitolândia/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
     </Reference>
     <Reference Include="Vuforia.UnityExtensions">
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
@@ -341,10 +344,10 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="TextMeshPro-2017.1-Editor">
-      <HintPath>C:/Users/Malu Magalhães/Documents/EngSoftware-Grupo6-matheus/EngSoftware-Grupo6-matheus/Requisitolândia/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.1-Editor.dll</HintPath>
+      <HintPath>C:/Users/Malu Magalhães/Documents/Requisitolândia/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.1-Editor.dll</HintPath>
     </Reference>
     <Reference Include="TextMeshPro-2017.1-Runtime">
-      <HintPath>C:/Users/Malu Magalhães/Documents/EngSoftware-Grupo6-matheus/EngSoftware-Grupo6-matheus/Requisitolândia/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.1-Runtime.dll</HintPath>
+      <HintPath>C:/Users/Malu Magalhães/Documents/Requisitolândia/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.1-Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Users/Malu Magalhães/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
