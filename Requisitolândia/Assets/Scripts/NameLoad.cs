@@ -53,7 +53,6 @@ public class NameLoad : MonoBehaviour {
 
     public void WriteCharacterName(string name)
     {
-        string path = GetPathToList();
         File.WriteAllText("Assets/Resources/Atual.txt", name + Environment.NewLine);
 
     }

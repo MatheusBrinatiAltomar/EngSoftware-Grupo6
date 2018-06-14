@@ -15,5 +15,10 @@ public class ScriptMenuPrincipal : MonoBehaviour
 		Application.Quit();
 	}
 
+    public void irParaMudarNome()
+    {
+        SceneManager.LoadScene("Scenes/nameChange");
+    }
+
 
 }

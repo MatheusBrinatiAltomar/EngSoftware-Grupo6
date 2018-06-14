@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 945418ab7af09e242a93d39221ec8a47
+  - enabled: 1
+    path: Assets/Scenes/nameChange.unity
+    guid: 64427118c38c41149a235d0a90e4d529
   m_configObjects: {}

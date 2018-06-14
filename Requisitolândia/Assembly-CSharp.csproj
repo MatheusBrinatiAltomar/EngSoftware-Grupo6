@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\controlRemoveButton.cs" />
      <Compile Include="Assets\Scripts\Data.cs" />
      <Compile Include="Assets\Scripts\getName.cs" />
      <Compile Include="Assets\Scripts\loadAndReadTxt.cs" />
@@ -70,6 +71,7 @@
      <Compile Include="Assets\Scripts\Scripts Tutorial Quiz\QuestionData.cs" />
      <Compile Include="Assets\Scripts\Scripts Tutorial Quiz\RoundData.cs" />
      <Compile Include="Assets\Scripts\Scripts Tutorial Quiz\SimpleObjectPool.cs" />
+     <Compile Include="Assets\Scripts\showPlayers.cs" />
      <Compile Include="Assets\Scripts\teste.cs" />
      <Compile Include="Assets\Scripts\User.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />

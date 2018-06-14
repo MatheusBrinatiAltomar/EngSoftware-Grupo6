@@ -1,82 +1,31 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using System.IO;
+
 
 [System.Serializable]
 public class User {
-    private int id;
-    private string userName;
-    private int timeSpent;
-    private int points;
-    private int area;
-    public string NameUser
-    {
-        get
-        {
-            return userName;
-        }
-
-        set
-        {
-            userName = value;
-        }
-    }
-
-    public int TimeSpent
-    {
-        get
-        {
-            return timeSpent;
-        }
-
-        set
-        {
-            timeSpent = value;
-        }
-    }
-
-    public int Points
-    {
-        get
-        {
-            return points;
-        }
-
-        set
-        {
-            points = value;
-        }
-    }
-
-    public int Area
-    {
-        get
-        {
-            return area;
-        }
-
-        set
-        {
-            area = value;
-        }
-    }
-
-    public int Id
-    {
-        get
-        {
-            return id;
-        }
-
-        set
-        {
-            id = value;
-        }
-    }
+    public int id;
+    public string userName;
+    public int timeSpent;
+    public int points;
+    public int area;
+    
 
     // Use this for initialization
 
+    public User(int id,string userName, int timeSpent, int points, int area)
+    {
+        this.id = id;
+        this.userName = userName;
+        this.timeSpent = timeSpent;
+        this.points = points;
+        this.area = area;
+    }
+
+    public User()
+    {
+
+    }
    
 
    

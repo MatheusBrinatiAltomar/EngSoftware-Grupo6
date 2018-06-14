@@ -2,63 +2,122 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
-public class PlayerCOntroller : MonoBehaviour {
-    private Data playerData;
+public class PlayerController : MonoBehaviour {
+    public Data playerData;
+    public List<User> players;
     private string path = "Assets/Resources/Users.json";
+    
     // Use this for initialization
     void Start() {
-        loadPlayersData();
-    }
+        
+
+}
 
     // Update is called once per frame
     void Update() {
 
     }
 
-    bool isUserAlreadyInDataBase(string userName)
+    public bool isUserAlreadyInDataBase(string userName)
     {
-        bool aux;
-        if (File.Exists(path))
+        bool aux=false;
+        loadPlayersData();
+        foreach (User player in playerData.users)
         {
-            foreach (User player in playerData.users)
+            if (player.userName == userName)
             {
-                if (player.NameUser == userName)
-                {
-                    aux = true;
-                    break;
-                }
+                aux = true;
+                break;
             }
-            aux = false;
         }
-        else
+           
+            return aux;
+    }
+
+    public void changeUserName(string newName,string oldName)
+    {
+        loadPlayersData();
+        foreach (User player in playerData.users)
         {
-            Debug.LogError("Não foi possivel abrir arquivo");
-            aux = false;
+            if (player.userName == oldName)
+            {
+                player.userName = newName;
+                savePlayersData();
+                break;
+            }
         }
-        return aux;
+
+    }
+
+
+    public void newPlayer(int id, string name,int timeSpent, int points, int area)
+    {
+        User newUsr = new User(id,name, timeSpent, points, area);
+        playerData.users.Add(newUsr);
+        savePlayersData();
+
+    }
+
+    public void removePlayer(string name)
+    {
+        int i = 0;
+        foreach (User player in playerData.users)
+        {
+            if (player.userName == name)
+            {
+                User playerToRmv = player;
+                playerData.users.Remove(playerToRmv);
+                savePlayersData();
+                break;
+            }
+            i++;
+        }
     }
 
     public void loadPlayersData()
     {
-        string dataAsJson = File.ReadAllText(path);
-        playerData = JsonUtility.FromJson<Data>(dataAsJson);
+        if (File.Exists(path))
+        {
+            string dataAsJson = File.ReadAllText(path);
+            playerData = JsonUtility.FromJson<Data>(dataAsJson);
+            }
+            else
+            {
+                Debug.LogError("Não foi possivel abrir arquivo");
+               
+            }
     }
 
     public void savePlayersData()
     {
         string dataAsJson = JsonUtility.ToJson(playerData);
-        string filePath = Application.dataPath + path;
-        File.WriteAllText(filePath, dataAsJson);
+        File.WriteAllText(path, dataAsJson);
         /* Write AllText subescreve o arquivo (ou seja tudo que está lá será apagado e novas infos escritas)
            Para só adcionar algo no text usar: File.AppendAllText(path,dataAsJson)
            Se quiser adcionar uma linha em branco após o texto escrito: File.AppendAllText(path, dataAsJson + Environment.NewLine);
          */
     }
 
-    public void savePlayerData(int indexPlayer)
+    public void WriteCurrentCharacterName(string name)
     {
-        string dataAsJson = JsonUtility.ToJson(playerData.users[indexPlayer]);
-        string filePath = Application.dataPath + path;
-        File.AppendAllText(path, dataAsJson);
+        //Escreve o nome de um personagem na lista contendo os personagens de uma seção
+        File.WriteAllText("Assets/Resources/Atual.txt", name);
+    }
+
+    public string ReadFile(string path)
+    {
+        // Lê o arquivo especificado
+        string name = "";
+        if (File.Exists(path))
+            return name = File.ReadAllText(path);
+        else
+            return name;
+
+    }
+
+    public string getAtualName()
+    {
+        string name = ReadFile("Assets/Resources/Atual.txt");
+        return name;
     }
 }

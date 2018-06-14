@@ -26,8 +26,18 @@ public class GameController : MonoBehaviour
     private int questionIndex;
     private List<GameObject> answerButtonGameObjects = new List<GameObject>();
 
+    //Mudanças Vinicius
+
+    public Text namePlayer;
+    public PlayerController script;
+
     void Start()
     {
+        script = GameObject.Find("GameController").GetComponent<PlayerController>();
+        string name;
+        script.loadPlayersData();
+        name = script.ReadFile("Assets/Resources/Atual.txt");
+        namePlayer.text = name;
         dataController = FindObjectOfType<DataController>();                              // Store a reference to the DataController so we can request the data we need for this round
 
         currentRoundData = dataController.GetCurrentRoundData();                            // Ask the DataController for the data for the current round. At the moment, we only have one round - but we could extend this
@@ -128,6 +138,6 @@ public class GameController : MonoBehaviour
 
     public void ReturnToMenu()
     {
-        SceneManager.LoadScene("MenuScreen");
+        SceneManager.LoadScene("Menu");
     }
 }

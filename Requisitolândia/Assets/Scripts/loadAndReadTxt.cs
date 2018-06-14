@@ -70,8 +70,8 @@ public class loadAndReadTxt : MonoBehaviour
     {
         try
         {
-            List<String> text = new List<String>();
-            string path = GetPathToSheet(name); // Define o caminho (relativo) para o arquivo da ficha do personagem
+
+           // Define o caminho (relativo) para o arquivo da ficha do personagem
             ShowCharacterSheet(name);
             WriteCharacterSheet(name);
             GameObject.Find("LogText").GetComponent<Text>().text = "OK! Adcionado";
