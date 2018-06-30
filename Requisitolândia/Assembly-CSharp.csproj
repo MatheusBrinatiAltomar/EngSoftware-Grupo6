@@ -59,6 +59,7 @@
      <Compile Include="Assets\Scripts\nomeUsuario.cs" />
      <Compile Include="Assets\Scripts\OpcoesScript.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\puzzleScript.cs" />
      <Compile Include="Assets\Scripts\saveButton.cs" />
      <Compile Include="Assets\Scripts\ScriptMenuPrincipal.cs" />
      <Compile Include="Assets\Scripts\Scripts Tutorial Quiz\AnswerButton.cs" />
