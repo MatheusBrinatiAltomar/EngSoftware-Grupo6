@@ -21,7 +21,7 @@ public class GameController : MonoBehaviour
     private QuestionData[] questionPool;
 
     private bool isRoundActive = false;
-    private float timeRemaining;
+    public float timeRemaining;
     private int playerScore;
     private int questionIndex;
     private List<GameObject> answerButtonGameObjects = new List<GameObject>();

@@ -9,11 +9,11 @@ public class User {
     public float timeSpent;
     public int points;
     public int area;
-    
+
 
     // Use this for initialization
 
-    public User(int id,string userName, float timeSpent, int points, int area)
+    public User(int id, string userName, float timeSpent, int points, int area)
     {
         this.id = id;
         this.userName = userName;

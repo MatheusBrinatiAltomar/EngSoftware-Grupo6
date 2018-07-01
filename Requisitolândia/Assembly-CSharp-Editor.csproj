@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Editor\GameDataEditor.cs" />
      <Compile Include="Assets\Editor\TestedoTeste.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/HAL/Documents/GitHub/EngSoftware-Grupo6/Requisitolândia/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
