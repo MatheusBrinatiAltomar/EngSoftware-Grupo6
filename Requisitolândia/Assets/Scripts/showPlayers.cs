@@ -10,12 +10,15 @@ public class showPlayers : MonoBehaviour {
     public TextMeshProUGUI[] texts;
     public GameObject[] userTexts;
     public GameObject menu;
+
+    public TextMeshProUGUI [] names;
+    public TextMeshProUGUI[] scores;
+    public TextMeshProUGUI[] times;
     // Use this for initialization
 
 
     void Start () {
-         menu = GameObject.Find("MenuPrincipal");
-        Debug.Log(menu);
+         
         
 
 
@@ -43,6 +46,25 @@ public class showPlayers : MonoBehaviour {
             i++;
         }
         
+    }
+
+    public void showRanking()
+    {
+
+
+        
+        script = GameObject.Find("EventSystem").GetComponent<PlayerController>();
+        script.loadPlayersData();
+        int i = 0;
+        foreach (User player in script.playerData.users)
+        {
+            names[i].text = player.userName;
+            scores[i].text = player.points.ToString();
+            times[i].text = player.timeSpent.ToString();
+            i++;
+            if (i > 3)
+                break;
+        }
     }
 
         

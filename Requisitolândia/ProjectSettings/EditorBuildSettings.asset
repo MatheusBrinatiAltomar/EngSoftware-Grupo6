@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/nameChange.unity
     guid: 64427118c38c41149a235d0a90e4d529
+  - enabled: 1
+    path: Assets/Scenes/Ranking.unity
+    guid: 7df8e33990695bf4aab60080e692d53b
+  - enabled: 1
+    path: Assets/Scenes/Puzzle.unity
+    guid: f1bac2dc8570699438850dc157534f9b
   m_configObjects: {}

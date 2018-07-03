@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+
 
 
 
@@ -15,12 +17,13 @@ public class puzzleScript : MonoBehaviour {
     int firstGuessValue, secondGuessValue;
     int firstGuessIndex, secondGuessIndex;
     bool firstGuess, secondGuess; //false por default
-
+    int numAcertos;
+    public bool isGamePaused = false;
 
     //Puzzle Load
     public PuzzleData puzzleData;
     public List<Puzzle> puzzles;
-    private string puzzlePath = "Assets/Resources/Puzzles.json";
+    private string puzzlePath = "Assets/Resources/Puzzles2.json";
     GameObject[] objects;
 
     public Sprite LogoImg;
@@ -46,15 +49,25 @@ public class puzzleScript : MonoBehaviour {
 
     void Start () {
         //Time is set in Unit
+        string[] puzzlesPath = new string[5];
 
+        for (int i = 1; i <=5; i++)
+        {
+            puzzlesPath[i-1] = "Assets/Resources/Puzzles"+i.ToString()+".json";
+        }
+
+        
+        int index = Random.Range(1, 5);
+        print(index);
         //User Load
         script = GameObject.Find("GameController").GetComponent<PlayerController>();
         script.loadPlayersData();
         nameUser = script.ReadFile("Assets/Resources/Atual.txt");
+        User u = script.getUser(nameUser);
         namePlayer.text = nameUser;
         //Time and points count and display
         UpdateTimeRemainingDisplay();
-        playerScore = 0;
+        playerScore = u.points;
         isRoundActive = true;
 
 
@@ -67,8 +80,8 @@ public class puzzleScript : MonoBehaviour {
         blank = Resources.Load<Sprite>("blank");
 
         //Read puzzle file
-        if (File.Exists(puzzlePath)) {
-             string dataAsJson = File.ReadAllText(puzzlePath);
+        if (File.Exists(puzzlesPath[index])) {
+             string dataAsJson = File.ReadAllText(puzzlesPath[index]);
              puzzleData = JsonUtility.FromJson<PuzzleData>(dataAsJson);
         } else {
             Debug.LogError("Não foi possivel abrir arquivo");
@@ -92,9 +105,6 @@ public class puzzleScript : MonoBehaviour {
     {
         isRoundActive = false;
 
-        
-
-
         if (timeRemaining <= 0)
         {
             roundLostDisplay.SetActive(true);
@@ -117,12 +127,16 @@ public class puzzleScript : MonoBehaviour {
         if (isRoundActive)
         {
             scoreDisplay.text = playerScore.ToString();
-            timeRemaining -= Time.deltaTime;                                                // If the round is active, subtract the time since Update() was last called from timeRemaining
-            UpdateTimeRemainingDisplay();
-
+            if (!isGamePaused)
+            {
+                timeRemaining -= Time.deltaTime;                                                // If the round is active, subtract the time since Update() was last called from timeRemaining
+                UpdateTimeRemainingDisplay();
+            }
             if (timeRemaining <= 0f)                                                     // If timeRemaining is 0 or less, the round ends
             {
-                EndRound();
+                script.saveUserPoints(nameUser, playerScore, timeRemaining);
+                callRound();
+                //EndRound();
             }
         }
     }
@@ -162,6 +176,7 @@ public class puzzleScript : MonoBehaviour {
             firstGuess = false;
             secondGuess = false;
             playerScore += 10;
+            numAcertos++;
         }
         else if (firstGuessValue != secondGuessValue && secondGuess && firstGuess)
         {
@@ -178,6 +193,18 @@ public class puzzleScript : MonoBehaviour {
         }
         yield return new WaitForSecondsRealtime(1);
         feedbackDisplay.SetActive(false);
+        if(numAcertos >= 4)
+        {
+            string count = File.ReadAllText("Assets/Resources/fase.txt");
+            int fase = int.Parse(count);
+            fase += 1;
+            File.WriteAllText("Assets/Resources/fase.txt", fase.ToString());
+            if(fase >= 3)
+            {
+                EndRound();
+            }
+            callRound();
+        }
     }
 
     public void clickPuzzleButton()
@@ -204,6 +231,10 @@ public class puzzleScript : MonoBehaviour {
     }
 
 
+    public void callRound()
+    {
+        SceneManager.LoadScene("Game");
+    }
     
  
 
@@ -212,7 +243,17 @@ public class puzzleScript : MonoBehaviour {
         script.saveUserPoints(nameUser, playerScore, timeRemaining);
     }
 
-    
+    public void gamePaused()
+    {
+        if (isGamePaused)
+        {
+            isGamePaused = false;
+        }
+        else
+        {
+            isGamePaused = true;
+        }
+    }
 
     
 }

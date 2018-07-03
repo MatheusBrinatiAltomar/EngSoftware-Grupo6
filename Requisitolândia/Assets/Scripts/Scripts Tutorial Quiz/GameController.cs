@@ -2,18 +2,21 @@
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+using System.IO;
 
 public class GameController : MonoBehaviour
 {
+    public AudioSource buttonSound;
     public SimpleObjectPool answerButtonObjectPool;
     public Text questionText;
     public Text scoreDisplay;
     public Text timeRemainingDisplay;
     public Transform answerButtonParent;
-
+    //private int[] roundId;
     public GameObject questionDisplay;
     public GameObject roundLostDisplay;
     public GameObject roundWinDisplay;
+    public GameObject puzzleDisplay;
     public Text highScoreDisplay;
 
     private DataController dataController;
@@ -21,6 +24,8 @@ public class GameController : MonoBehaviour
     private QuestionData[] questionPool;
 
     private bool isRoundActive = false;
+    public bool isGamePaused = false;
+    public bool finalRound = false;
     public float timeRemaining;
     private int playerScore;
     private int questionIndex;
@@ -34,11 +39,22 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
+        //Control Last round
+        string count = File.ReadAllText("Assets/Resources/fase.txt");
+        int fase = int.Parse(count);
+        if(fase >= 3)
+        {
+            isRoundActive = false;
+            questionDisplay.SetActive(false);
+            roundWinDisplay.SetActive(true);
+        }
+
+        //
         script = GameObject.Find("GameController").GetComponent<PlayerController>();
         script.loadPlayersData();
         nameUser = script.ReadFile("Assets/Resources/Atual.txt");
         namePlayer.text = nameUser;
-
+        User u = script.getUser(nameUser);
         dataController = FindObjectOfType<DataController>();                              // Store a reference to the DataController so we can request the data we need for this round
 
         currentRoundData = dataController.GetCurrentRoundData();                            // Ask the DataController for the data for the current round. At the moment, we only have one round - but we could extend this
@@ -46,32 +62,52 @@ public class GameController : MonoBehaviour
 
         timeRemaining = currentRoundData.timeLimitInSeconds;                                // Set the time limit for this round based on the RoundData object
         UpdateTimeRemainingDisplay();
-        playerScore = 0;
+        print("Points:" + u.points);
+        playerScore = u.points;
         questionIndex = 0;
 
         ShowQuestion();
         isRoundActive = true;
+
+        
     }
 
     public void saveButton()
     {
-        playerScore = 23333;
         print(nameUser + "salvo" + playerScore + " " + timeRemaining );
         script.saveUserPoints(nameUser, playerScore,timeRemaining);
+    }
+
+    public void gamePaused()
+    {
+        if (isGamePaused)
+        {
+            isGamePaused = false;
+        }
+        else
+        {
+            isGamePaused = true;
+        }
     }
 
     void Update()
     {
         if (isRoundActive)
         {
+            if (!isGamePaused)
+            {
             timeRemaining -= Time.deltaTime;                                                // If the round is active, subtract the time since Update() was last called from timeRemaining
             UpdateTimeRemainingDisplay();
-
+            }
             if (timeRemaining <= 0f)                                                     // If timeRemaining is 0 or less, the round ends
             {
                 EndRound();
             }
         }
+        //if (roundId == 0)
+       // {
+       //     finalRound = true;
+        //}
     }
 
     void ShowQuestion()
@@ -104,6 +140,7 @@ public class GameController : MonoBehaviour
 
     public void AnswerButtonClicked(bool isCorrect)
     {
+        buttonSound.Play();
         if (isCorrect)
         {
             playerScore += currentRoundData.pointsAddedForCorrectAnswer;                    // If the AnswerButton that was clicked was the correct answer, add points
@@ -119,6 +156,7 @@ public class GameController : MonoBehaviour
         {
             EndRound();
         }
+
     }
 
     private void UpdateTimeRemainingDisplay()
@@ -140,12 +178,14 @@ public class GameController : MonoBehaviour
         }
         else
         {
-            roundWinDisplay.SetActive(true);
+            Debug.Log("Erro");
+            script.saveUserPoints(nameUser, playerScore, timeRemaining);
+            puzzleDisplay.SetActive(true);
         }
     }
 
     public void ReturnToMenu()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("MenuScreen");
     }
 }

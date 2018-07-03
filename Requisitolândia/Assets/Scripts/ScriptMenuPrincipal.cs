@@ -9,7 +9,11 @@ public class ScriptMenuPrincipal : MonoBehaviour
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         SceneManager.LoadScene("Scenes/nameInput");
     }
-
+    public void Ranking()
+	{
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene("Scenes/Ranking");
+    }
 	public void SairJogo()
 	{
 		Application.Quit();

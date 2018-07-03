@@ -1,0 +1,44 @@
+{
+  "puzzles": [
+    {
+      "id": 0,
+      "info": "Ferramenta CASE",
+      "value": 4
+    },
+    {
+      "id": 1,
+      "info": "Questionário",
+      "value": 1
+    },
+    {
+      "id": 2,
+      "info": "Produz ATAs",
+      "value": 33
+    },
+    {
+      "id": 3,
+      "info": "Técnica ágil",
+      "value": 1
+    },
+    {
+      "id": 4,
+      "info": "Avalicação Subjetiva",
+      "value": 7
+    },
+    {
+      "id": 3,
+      "info": "Seminário",
+      "value": 33
+    },
+    {
+      "id": 6,
+      "info": "Operação Pessoal",
+      "value": 7
+    },
+    {
+      "id": 7,
+      "info": "EasyRM",
+      "value": 4
+    }
+  ]
+}

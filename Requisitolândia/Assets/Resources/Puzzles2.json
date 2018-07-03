@@ -1,0 +1,44 @@
+{
+  "puzzles": [
+    {
+      "id": 0,
+      "info": "Técnica Individual",
+      "value": 4
+    },
+    {
+      "id": 1,
+      "info": "RE - Tools",
+      "value": 1
+    },
+    {
+      "id": 2,
+      "info": "Questionário",
+      "value": 5
+    },
+    {
+      "id": 3,
+      "info": "Entrevista",
+      "value": 4
+    },
+    {
+      "id": 4,
+      "info": "Ferramenta CASE",
+      "value": 1
+    },
+    {
+      "id": 5,
+      "info": "Exige Moderador",
+      "value": 3
+    },
+    {
+      "id": 6,
+      "info": "Permite Anonimato ",
+      "value": 5
+    },
+    {
+      "id": 7,
+      "info": "Seminário",
+      "value": 3
+    }
+  ]
+}

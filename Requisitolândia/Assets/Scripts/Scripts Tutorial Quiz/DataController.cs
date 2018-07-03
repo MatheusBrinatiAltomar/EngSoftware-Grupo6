@@ -26,8 +26,9 @@ public class DataController : MonoBehaviour
     {
         // If we wanted to return different rounds, we could do that here
         // We could store an int representing the current round index in PlayerProgress
-
-        return allRoundData[0];
+        string count = File.ReadAllText("Assets/Resources/fase.txt");
+        return allRoundData[int.Parse(count)];
+        //return allRoundData[Random.Range(0, 3)];
     }
 
     public void SubmitNewPlayerScore(int newScore)
