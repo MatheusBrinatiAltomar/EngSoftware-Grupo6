@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
@@ -34,7 +34,6 @@ public class GameController : MonoBehaviour
     void Start()
     {
         script = GameObject.Find("GameController").GetComponent<PlayerController>();
-        string name;
         script.loadPlayersData();
         name = script.ReadFile("Assets/Resources/Atual.txt");
         namePlayer.text = name;
