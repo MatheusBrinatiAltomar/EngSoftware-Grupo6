@@ -26,12 +26,40 @@ public class puzzleScript : MonoBehaviour {
     public Sprite LogoImg;
     public Sprite blank;
 
-    public GameController script;
+    //Display management 
+    public Text questionText;
+    public Text scoreDisplay;
+    public Text timeRemainingDisplay;
+    public GameObject Panel;
+    public GameObject roundLostDisplay;
+    public GameObject roundWinDisplay;
+    public GameObject feedbackDisplay;
+
+    //Score count
+    public bool isRoundActive;
+    public float timeRemaining;
+    public int playerScore;
+    public Text namePlayer;
+    public PlayerController script;
+    public string nameUser;
+
 
     void Start () {
-        script = GameObject.Find("EventSystem").GetComponent<GameController>();
-        float time = script.timeRemaining;
+        //Time is set in Unit
 
+        //User Load
+        script = GameObject.Find("GameController").GetComponent<PlayerController>();
+        script.loadPlayersData();
+        nameUser = script.ReadFile("Assets/Resources/Atual.txt");
+        namePlayer.text = nameUser;
+        //Time and points count and display
+        UpdateTimeRemainingDisplay();
+        playerScore = 0;
+        isRoundActive = true;
+
+
+
+        //-------- Puzzle Logic
 
        objects = GameObject.FindGameObjectsWithTag("PuzzleButton");
         //Set card background and white background
@@ -60,6 +88,45 @@ public class puzzleScript : MonoBehaviour {
 
     }
 
+    public void EndRound()
+    {
+        isRoundActive = false;
+
+        
+
+
+        if (timeRemaining <= 0)
+        {
+            roundLostDisplay.SetActive(true);
+            Panel.SetActive(false);
+        }
+        else
+        {
+            roundWinDisplay.SetActive(true);
+            Panel.SetActive(false);
+        }
+    }
+
+    private void UpdateTimeRemainingDisplay()
+    {
+        timeRemainingDisplay.text = Mathf.Round(timeRemaining).ToString();
+    }
+
+    void Update()
+    {
+        if (isRoundActive)
+        {
+            scoreDisplay.text = playerScore.ToString();
+            timeRemaining -= Time.deltaTime;                                                // If the round is active, subtract the time since Update() was last called from timeRemaining
+            UpdateTimeRemainingDisplay();
+
+            if (timeRemaining <= 0f)                                                     // If timeRemaining is 0 or less, the round ends
+            {
+                EndRound();
+            }
+        }
+    }
+
     void rmvObject(string name)
     {
         foreach(GameObject obj in objects)
@@ -74,9 +141,7 @@ public class puzzleScript : MonoBehaviour {
     }
    
         // Update is called once per frame
-        void Update () {
-		
-	}
+
 
     public void addListeners()
     {
@@ -88,27 +153,31 @@ public class puzzleScript : MonoBehaviour {
 
     IEnumerator Wait3Seconds()
     {
-        yield return new WaitForSecondsRealtime(2);
+        
         if (firstGuessValue == secondGuessValue && secondGuess && firstGuess)
         {
+            feedbackDisplay.GetComponent<TMPro.TextMeshProUGUI>().text = "Acertou a combinação!";
+            feedbackDisplay.GetComponent<TMPro.TextMeshProUGUI>().color = Color.green;
+            feedbackDisplay.SetActive(true);
             firstGuess = false;
             secondGuess = false;
-            /*rmvObject(firstGuessIndex.ToString());
-            rmvObject(secondGuessIndex.ToString());*/
-            sortedList[firstGuessIndex].GetComponentInChildren<Text>().text = firstGuessIndex.ToString();
-            sortedList[secondGuessIndex].GetComponentInChildren<Text>().text = secondGuessIndex.ToString();
-            print("Acertou!");
+            playerScore += 10;
         }
         else if (firstGuessValue != secondGuessValue && secondGuess && firstGuess)
         {
+            yield return new WaitForSecondsRealtime(1);
+            feedbackDisplay.GetComponent<TMPro.TextMeshProUGUI>().text = "Errou a combinação!";
+            feedbackDisplay.GetComponent<TMPro.TextMeshProUGUI>().color = Color.red;
+            feedbackDisplay.SetActive(true);
             sortedList[firstGuessIndex].image.sprite = LogoImg;
             sortedList[secondGuessIndex].image.sprite = LogoImg;
-            sortedList[firstGuessIndex].GetComponentInChildren<Text>().text = firstGuessIndex.ToString();
-            sortedList[secondGuessIndex].GetComponentInChildren<Text>().text = secondGuessIndex.ToString();
+            sortedList[firstGuessIndex].GetComponentInChildren<Text>().text = "";
+            sortedList[secondGuessIndex].GetComponentInChildren<Text>().text = "";
             firstGuess = false;
             secondGuess = false;
-            print("Errou!");
         }
+        yield return new WaitForSecondsRealtime(1);
+        feedbackDisplay.SetActive(false);
     }
 
     public void clickPuzzleButton()
@@ -129,7 +198,21 @@ public class puzzleScript : MonoBehaviour {
             sortedList[secondGuessIndex].image.sprite = blank;
             sortedList[secondGuessIndex].GetComponentInChildren<Text>().text = puzzleData.puzzles[secondGuessIndex].info;
             secondGuessValue =  puzzleData.puzzles[secondGuessIndex].value;
+            StartCoroutine("Wait3Seconds");
         }
-        StartCoroutine("Wait3Seconds");
+        
     }
+
+
+    
+ 
+
+    public void saveButton()
+    {
+        script.saveUserPoints(nameUser, playerScore, timeRemaining);
+    }
+
+    
+
+    
 }

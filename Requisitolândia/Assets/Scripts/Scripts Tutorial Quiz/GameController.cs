@@ -55,6 +55,8 @@ public class GameController : MonoBehaviour
 
     public void saveButton()
     {
+        playerScore = 23333;
+        print(nameUser + "salvo" + playerScore + " " + timeRemaining );
         script.saveUserPoints(nameUser, playerScore,timeRemaining);
     }
 

@@ -58,6 +58,8 @@
      <Compile Include="Assets\Scripts\NameLoad.cs" />
      <Compile Include="Assets\Scripts\nomeUsuario.cs" />
      <Compile Include="Assets\Scripts\OpcoesScript.cs" />
+     <Compile Include="Assets\Scripts\PausaScript.cs" />
+     <Compile Include="Assets\Scripts\playButtonSound.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Puzzle.cs" />
      <Compile Include="Assets\Scripts\PuzzleData.cs" />
